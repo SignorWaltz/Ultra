@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ristorante Bella Italia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>Ristorante Bella Italia</h1>
+        <p>Il gusto della vera cucina italiana</p>
+    </header>
+
+    <!-- Carosello -->
+    <section class="carousel">
+        <div class="carousel-container">
+            <img src="images/ristorante1.jpg" class="carousel-image" alt="Ristorante interno">
+            <img src="images/ristorante2.jpg" class="carousel-image" alt="Piatto tipico">
+            <img src="images/ristorante3.jpg" class="carousel-image" alt="Sala da pranzo">
+        </div>
+        <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+        <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+    </section>
+
+    <!-- Sezione contattaci -->
+    <section class="contact-section">
+        <h2>Contattaci</h2>
+        <p>Vuoi prenotare un tavolo o avere maggiori informazioni? Contattaci ora!</p>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Il tuo nome">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="La tua email">
+
+            <label for="message">Messaggio:</label>
+            <textarea id="message" name="message" placeholder="Scrivi qui il tuo messaggio..."></textarea>
+
+            <button type="submit">Invia</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Ristorante Bella Italia. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
