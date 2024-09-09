@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ristorante Ultra</title>
+    <!-- Aggiungi Font Awesome per l'icona di Instagram -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,18 +17,14 @@
         <h1>Ultra</h1>
     </header>
 
-    <!-- Carosello -->
-    <section class="carousel">
-        <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
-        <div class="carousel-container">
-            <img src="images/ristorante1.jpg" class="carousel-image" alt="Ristorante interno">
-            <img src="images/ristorante2.jpg" class="carousel-image" alt="Piatto tipico">
-            <img src="images/ristorante3.jpg" class="carousel-image" alt="Sala da pranzo">
-            <img src="images/ristorante4.jpg" class="carousel-image" alt="Decorazioni">
-            <img src="images/ristorante5.jpg" class="carousel-image" alt="Ambiente raffinato">
-            <img src="images/ristorante6.jpg" class="carousel-image" alt="Chef al lavoro">
-        </div>
-        <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+    <!-- Immagini in verticale con animazione -->
+    <section class="vertical-images">
+        <img src="images/ristorante1.jpg" class="vertical-image" alt="Ristorante interno">
+        <img src="images/ristorante2.jpg" class="vertical-image" alt="Piatto tipico">
+        <img src="images/ristorante3.jpg" class="vertical-image" alt="Sala da pranzo">
+        <img src="images/ristorante4.jpg" class="vertical-image" alt="Decorazioni">
+        <img src="images/ristorante5.jpg" class="vertical-image" alt="Ambiente raffinato">
+        <img src="images/ristorante6.jpg" class="vertical-image" alt="Chef al lavoro">
     </section>
 
     <!-- Sezione contattaci -->
@@ -47,10 +45,13 @@
         </form>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer con icona di Instagram -->
     <footer class="footer">
         <p>&copy; 2024 Ristorante Ultra. Tutti i diritti riservati.</p>
-        <p>Seguici su <a href="https://www.instagram.com/ultra.venezia/" target="_blank">Instagram</a></p>
+        <!-- Icona Instagram -->
+        <a href="https://www.instagram.com/ultra.venezia/" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
     </footer>
 
     <script src="script.js"></script>

@@ -1,26 +1,19 @@
-let currentIndex = 0;
+// Funzione per far apparire le immagini quando vengono visualizzate
+function revealImages() {
+    const images = document.querySelectorAll('.vertical-image');
+    const windowHeight = window.innerHeight;
+    const revealPoint = 150; // Punto di trigger dell'animazione
 
-function showSlide(index) {
-    const slides = document.getElementsByClassName('carousel-image');
-    const totalSlides = slides.length;
+    images.forEach(image => {
+        const imageTop = image.getBoundingClientRect().top;
 
-    if (index >= totalSlides) currentIndex = 0;
-    if (index < 0) currentIndex = totalSlides - 3;
-
-    for (let i = 0; i < totalSlides; i++) {
-        slides[i].style.display = "none";
-    }
-
-    // Mostra tre immagini per volta
-    for (let i = currentIndex; i < currentIndex + 3 && i < totalSlides; i++) {
-        slides[i].style.display = "block";
-    }
+        if (imageTop < windowHeight - revealPoint) {
+            image.classList.add('appear');
+        } else {
+            image.classList.remove('appear');
+        }
+    });
 }
 
-function moveCarousel(n) {
-    currentIndex += n;
-    showSlide(currentIndex);
-}
-
-// Inizializza il carosello
-showSlide(currentIndex);
+// Aggiunge l'evento di scroll per far apparire le immagini
+window.addEventListener('scroll', revealImages);
