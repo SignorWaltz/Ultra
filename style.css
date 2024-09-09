@@ -19,16 +19,16 @@ p {
 }
 
 a {
-    color: #e74c3c;
+    color: #333;
     text-decoration: none;
 }
 
 a:hover {
-    color: #c0392b;
+    color: #333;
 }
 
 .header {
-    background-color: #424242;
+    background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
@@ -105,7 +105,7 @@ a:hover {
 
 .contact-section button {
     padding: 10px 20px;
-    background-color: #e74c3c;
+    background-color: #333;
     color: white;
     border: none;
     border-radius: 5px;
@@ -113,7 +113,7 @@ a:hover {
 }
 
 .contact-section button:hover {
-    background-color: #c0392b;
+    background-color: #333;
 }
 
 /* Footer */
